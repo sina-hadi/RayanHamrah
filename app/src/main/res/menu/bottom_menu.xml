@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/chartFragment"
+        android:icon="@drawable/ic_chart"
+        android:title="@string/chart" />
+
+    <item
+        android:id="@+id/eyeFragment"
+        android:icon="@drawable/ic_eye"
+        android:title="@string/eye" />
+
+    <item
+        android:id="@+id/portfoFragment"
+        android:icon="@drawable/ic_portfo"
+        android:title="@string/portfo" />
+
+    <item
+        android:id="@+id/shopFragment"
+        android:icon="@drawable/ic_shop"
+        android:title="@string/shop" />
+
+    <item
+        android:id="@+id/searchFragment"
+        android:icon="@drawable/ic_search"
+        android:title="@string/search" />
+
+</menu>

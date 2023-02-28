@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/nav_search"
+        android:icon="@drawable/ic_search"
+        android:title="@string/search" />
+
+    <item
+        android:id="@+id/nav_shop"
+        android:icon="@drawable/ic_shop"
+        android:title="@string/shop" />
+
+    <item
+        android:id="@+id/nav_portfo"
+        android:icon="@drawable/ic_portfo"
+        android:title="@string/portfo" />
+
+    <item
+        android:id="@+id/nav_eye"
+        android:icon="@drawable/ic_eye"
+        android:title="@string/eye" />
+
+    <item
+        android:id="@+id/nav_chart"
+        android:icon="@drawable/ic_chart"
+        android:title="@string/chart" />
+
+    <item android:title="communicate">
+
+        <menu>
+
+            <item
+                android:id="@+id/sina"
+                android:icon="@drawable/ic_portfo"
+                android:title="Green"/>
+
+            <item
+                android:id="@+id/asdf"
+                android:icon="@drawable/ic_chart"
+                android:title="Yellow"/>
+
+        </menu>
+
+    </item>
+
+</menu>

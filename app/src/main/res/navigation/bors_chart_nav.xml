@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bors_chart_nav"
+    app:startDestination="@id/borsChartFragment">
+
+    <fragment
+        android:id="@+id/borsChartFragment"
+        android:name="com.codinginflow.rayanhamrah.ui.shakhes.BorsChartFragment"
+        android:label="fragment_bors_chart"
+        tools:layout="@layout/fragment_bors_chart">
+        <action
+            android:id="@+id/action_borsChartFragment_to_otherChartFragment"
+            app:destination="@id/otherChartFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right" />
+        <action
+            android:id="@+id/action_borsChartFragment_to_fraBorsChartFragment"
+            app:destination="@id/fraBorsChartFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fraBorsChartFragment"
+        android:name="com.codinginflow.rayanhamrah.ui.shakhes.FraBorsChartFragment"
+        android:label="fragment_fra_bors_chart"
+        tools:layout="@layout/fragment_fra_bors_chart">
+        <action
+            android:id="@+id/action_fraBorsChartFragment_to_borsChartFragment"
+            app:destination="@id/borsChartFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
+        <action
+            android:id="@+id/action_fraBorsChartFragment_to_otherChartFragment"
+            app:destination="@id/otherChartFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/otherChartFragment"
+        android:name="com.codinginflow.rayanhamrah.ui.shakhes.OtherChartFragment"
+        android:label="fragment_other_chart"
+        tools:layout="@layout/fragment_other_chart">
+        <action
+            android:id="@+id/action_otherChartFragment_to_borsChartFragment"
+            app:destination="@id/borsChartFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left" />
+        <action
+            android:id="@+id/action_otherChartFragment_to_fraBorsChartFragment"
+            app:destination="@id/fraBorsChartFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left" />
+    </fragment>
+
+</navigation>

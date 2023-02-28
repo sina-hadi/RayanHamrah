@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.main.ChartFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="16dp">
+
+        <TextView
+            android:id="@+id/borsChart"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/default_theme"
+            android:gravity="center"
+            android:text="@string/borsChart"
+            android:textColor="@color/gray" />
+
+        <TextView
+            android:id="@+id/fraBorsChart"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/default_theme"
+            android:gravity="center"
+            android:text="@string/fraBorsChart"
+            android:textColor="@color/gray" />
+
+        <TextView
+            android:id="@+id/otherChart"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/default_theme"
+            android:gravity="center"
+            android:text="@string/otherChart"
+            android:textColor="@color/gray" />
+
+    </LinearLayout>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/navHostFragmentChart"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/bors_chart_nav" />
+
+</LinearLayout>

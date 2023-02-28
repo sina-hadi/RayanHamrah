@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CustomProgressBar">
+
+        <attr name="firstPrice" format="integer"/>
+        <attr name="lastPrice" format="integer"/>
+        <attr name="maxRange" format="integer"/>
+        <attr name="minRange" format="integer"/>
+        <attr name="maxPrice" format="integer"/>
+        <attr name="minPrice" format="integer"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="CustomEthernet">
+
+        <attr name="leftColor" format="integer"/>
+        <attr name="rightColor" format="integer"/>
+
+    </declare-styleable>
+
+</resources>
