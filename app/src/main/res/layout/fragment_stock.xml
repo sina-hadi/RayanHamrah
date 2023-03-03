@@ -372,7 +372,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:padding="8dp"
-                android:text="hello world"
+                android:text="ارزش معاملات"
                 app:layout_constraintEnd_toStartOf="@id/item1_2"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/line3" />
@@ -397,7 +397,7 @@
                 android:layout_marginStart="8dp"
                 android:background="@color/lightGray"
                 android:padding="8dp"
-                android:text="hello world"
+                android:text="وضعیت نماد - گروه"
                 app:layout_constraintEnd_toStartOf="@id/item2_2"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/item1_1" />
@@ -422,7 +422,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:padding="8dp"
-                android:text="hello world"
+                android:text="زمان آخرین معامله"
                 app:layout_constraintEnd_toStartOf="@id/item3_2"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/item2_1" />
@@ -447,7 +447,7 @@
                 android:layout_marginStart="8dp"
                 android:background="@color/lightGray"
                 android:padding="8dp"
-                android:text="hello world"
+                android:text="شرکت"
                 app:layout_constraintEnd_toStartOf="@id/item4_2"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/item3_1" />
@@ -472,7 +472,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:padding="8dp"
-                android:text="hello world"
+                android:text="قیمت دیروز"
                 app:layout_constraintEnd_toStartOf="@id/item5_2"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/item4_1" />
@@ -497,7 +497,7 @@
                 android:layout_marginStart="8dp"
                 android:background="@color/lightGray"
                 android:padding="8dp"
-                android:text="hello world"
+                android:text="آستانه قیمت"
                 app:layout_constraintEnd_toStartOf="@id/item6_2"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/item5_1" />
@@ -522,7 +522,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:padding="8dp"
-                android:text="hello world"
+                android:text="ارزش بازار"
                 app:layout_constraintEnd_toStartOf="@id/item7_2"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/item6_1" />
@@ -547,7 +547,7 @@
                 android:layout_marginStart="8dp"
                 android:background="@color/lightGray"
                 android:padding="8dp"
-                android:text="hello world"
+                android:text="بازه روز"
                 app:layout_constraintEnd_toStartOf="@id/item8_2"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/item7_1" />
@@ -572,7 +572,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:padding="8dp"
-                android:text="hello world"
+                android:text="نوع بازار"
                 app:layout_constraintEnd_toStartOf="@id/item9_2"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/item8_1" />
@@ -597,7 +597,7 @@
                 android:layout_marginStart="8dp"
                 android:background="@color/lightGray"
                 android:padding="8dp"
-                android:text="hello world"
+                android:text="آستانه تعداد"
                 app:layout_constraintEnd_toStartOf="@id/item10_2"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/item9_1" />
@@ -622,7 +622,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:padding="8dp"
-                android:text="hello world"
+                android:text="قیمت فردا"
                 app:layout_constraintEnd_toStartOf="@id/item11_2"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/item10_1" />
@@ -647,7 +647,7 @@
                 android:layout_marginStart="8dp"
                 android:background="@color/lightGray"
                 android:padding="8dp"
-                android:text="hello world"
+                android:text="حجم مبنا"
                 app:layout_constraintEnd_toStartOf="@id/item12_2"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/item11_1" />
@@ -672,7 +672,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:padding="8dp"
-                android:text="hello world"
+                android:text="بازه هفته"
                 app:layout_constraintEnd_toStartOf="@id/item13_2"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/item12_1" />
@@ -697,7 +697,7 @@
                 android:layout_marginStart="8dp"
                 android:background="@color/lightGray"
                 android:padding="8dp"
-                android:text="hello world"
+                android:text="بازه سال"
                 app:layout_constraintEnd_toStartOf="@id/item14_2"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/item13_1" />
@@ -722,7 +722,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:padding="8dp"
-                android:text="hello world"
+                android:text="بازده یک ماه"
                 app:layout_constraintEnd_toStartOf="@id/item15_2"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/item14_1" />
@@ -747,7 +747,7 @@
                 android:layout_marginStart="8dp"
                 android:background="@color/lightGray"
                 android:padding="8dp"
-                android:text="hello world"
+                android:text="بازده سه ماه"
                 app:layout_constraintEnd_toStartOf="@id/item16_2"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/item15_1" />
@@ -772,7 +772,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:padding="8dp"
-                android:text="hello world"
+                android:text="تغییر مجاز قیمت"
                 app:layout_constraintEnd_toStartOf="@id/item17_2"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/item16_1" />
@@ -797,7 +797,7 @@
                 android:layout_marginStart="8dp"
                 android:background="@color/lightGray"
                 android:padding="8dp"
-                android:text="hello world"
+                android:text="تغییر مجاز تعداد"
                 app:layout_constraintEnd_toStartOf="@id/item18_2"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/item17_1" />
@@ -818,7 +818,7 @@
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="70dp"
+                android:layout_height="50dp"
                 app:layout_constraintTop_toBottomOf="@id/item18_1" />
 
 

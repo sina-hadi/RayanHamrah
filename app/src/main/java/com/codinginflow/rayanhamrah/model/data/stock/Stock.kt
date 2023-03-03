@@ -21,6 +21,8 @@ data class Stock(
     val highestRange: Int,
     @SerializedName("id")
     val id: Int,
+    @SerializedName("lastOrderTime")
+    val lastOrderTime: String,
     @SerializedName("legalBuyCount")
     val legalBuyCount: Int,
     @SerializedName("legalBuyVolume")
@@ -61,12 +63,12 @@ data class Stock(
     val tomorrowHighestRange: Int,
     @SerializedName("tomorrowLowestRange")
     val tomorrowLowestRange: Int,
-    @SerializedName("TransferVolume")
+    @SerializedName("transferVolume")
     val transferVolume: Int,
     @SerializedName("volumeChange")
     val volumeChange: Int,
-    @SerializedName("volumeValue")
-    val volumeValue: Long,
+    @SerializedName("stockInfo")
+    val stockInfo: String,
     @SerializedName("weekHighestRange")
     val weekHighestRange: Int,
     @SerializedName("weekLowestRange")

@@ -81,7 +81,6 @@ class MainActivity : AppCompatActivity() {
                     bottomNavigation.menu.forEach { menu2 ->
                         menu2.isCheckable = true
                     }
-                    Log.e("ABCD", "${menu.itemId}")
                     stockNav = false
                     bottomNavigation.selectedItemId = menu.itemId
                     return@setOnMenuItemClickListener true

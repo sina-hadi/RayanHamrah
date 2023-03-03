@@ -10,15 +10,20 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.core.view.GravityCompat
 import androidx.core.view.updateLayoutParams
 import androidx.fragment.app.viewModels
 import com.codinginflow.rayanhamrah.R
 import com.codinginflow.rayanhamrah.adapter.StockPagerAdapter
 import com.codinginflow.rayanhamrah.databinding.FragmentStockBinding
 import com.codinginflow.rayanhamrah.model.data.stock.Stock
+import com.codinginflow.rayanhamrah.ui.bottomsheet.BuyDialogFragment
+import com.codinginflow.rayanhamrah.ui.bottomsheet.LogInDialogFragment
+import com.codinginflow.rayanhamrah.ui.bottomsheet.SellDialogFragment
 import com.codinginflow.rayanhamrah.util.NetworkResult
 import com.codinginflow.rayanhamrah.util.formatDecimalSeparator
 import com.codinginflow.rayanhamrah.viewmodel.StockViewModel
+import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.google.android.material.tabs.TabLayoutMediator
 import dagger.hilt.android.AndroidEntryPoint
 import kotlin.math.abs
@@ -53,6 +58,20 @@ class StockFragment : Fragment() {
             }
         }
 
+        binding.buyButton.setOnClickListener {
+            val bottomSheet = BuyDialogFragment()
+            bottomSheet.show(parentFragmentManager, "TAG")
+        }
+
+        binding.sellButton.setOnClickListener {
+            val bottomSheet = SellDialogFragment()
+            bottomSheet.setStyle(
+                BottomSheetDialogFragment.STYLE_NORMAL,
+                R.style.AppBottomSheetDialogTheme
+            )
+            bottomSheet.show(parentFragmentManager, "TAG")
+        }
+
         setUpTabLayoutWithViewPager()
 
         binding.personIcon2.updateLayoutParams<ConstraintLayout.LayoutParams> {
@@ -66,6 +85,39 @@ class StockFragment : Fragment() {
         setHeaderLayout(data)
         setPowerBuySell(data)
         setCustomProgressBar(data)
+        setInfoList(data)
+    }
+
+    @SuppressLint("SetTextI18n")
+    private fun setInfoList(data: Stock) {
+        binding.item12.text = (data.endPrice * data.transferVolume).formatDecimalSeparator()
+        binding.item22.text = data.stockInfo
+        binding.item32.text = data.lastOrderTime
+        binding.item42.text = data.fullName
+        binding.item52.text = data.yesterdayPrice.formatDecimalSeparator()
+        binding.item62.text = "${data.highestRange.formatDecimalSeparator()} - ${data.lowestRange.formatDecimalSeparator()}"
+        binding.item72.text = data.marketValue.formatDecimalSeparator()
+        binding.item82.text = "${data.highestPrice.formatDecimalSeparator()} - ${data.lowestPrice.formatDecimalSeparator()}"
+        binding.item92.text = data.marketType
+        binding.item102.text = "1 - ${data.orderRange}"
+        binding.item112.text = "${data.tomorrowHighestRange.formatDecimalSeparator()} - ${data.tomorrowLowestRange.formatDecimalSeparator()}"
+        binding.item122.text = data.baseVolume.formatDecimalSeparator()
+        binding.item132.text = "${data.weekHighestRange.formatDecimalSeparator()} - ${data.weekLowestRange.formatDecimalSeparator()}"
+        binding.item142.text = "${data.yearHighestRange.formatDecimalSeparator()} - ${data.yearLowestRange.formatDecimalSeparator()}"
+        binding.item152.text = "${abs(data.monthlyReturn)}%"
+        binding.item162.text = "${abs(data.threeMonthReturn)}%"
+        if(data.monthlyReturn >= 0) {
+            binding.item152.setTextColor(Color.parseColor("#289C00"))
+        } else {
+            binding.item152.setTextColor(Color.parseColor("#E90F0F"))
+        }
+        if(data.threeMonthReturn >= 0) {
+            binding.item162.setTextColor(Color.parseColor("#289C00"))
+        } else {
+            binding.item162.setTextColor(Color.parseColor("#E90F0F"))
+        }
+        binding.item172.text = data.priceChange.formatDecimalSeparator()
+        binding.item182.text = data.volumeChange.formatDecimalSeparator()
     }
 
     @SuppressLint("SetTextI18n")
