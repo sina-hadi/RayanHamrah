@@ -16,15 +16,17 @@
         android:hint="This is Hint"
         app:boxStrokeColor="#FF939393"
         app:boxStrokeWidthFocused="1dp"
-        app:startIconDrawable="@drawable/ic_lock_open"
+        app:endIconDrawable="@drawable/ic_lock_open"
+        app:endIconMode="custom"
         app:expandedHintEnabled="false"
         app:hintTextColor="#FF939393">
 
-        <EditText
-            android:id="@+id/etOrderPrice"
+        <com.fauji.commaseparated.widget.CommaSeparatedEditText
+            android:id="@+id/commaSeparatedEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="top|left" />
+            app:isSeparateByCommas="true"
+            app:noOfDecimals="0" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -42,12 +44,21 @@
         app:expandedHintEnabled="false"
         app:hintTextColor="#FF939393">
 
-        <EditText
-            android:id="@+id/etOrderPrice2"
+        <com.fauji.commaseparated.widget.CommaSeparatedEditText
+            android:id="@+id/commaSeparatedEditText2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="top|left" />
+            app:isSeparateByCommas="true"
+            app:noOfDecimals="0" />
 
     </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/buyStockButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/green"
+        android:text="BUY"/>
 
 </LinearLayout>

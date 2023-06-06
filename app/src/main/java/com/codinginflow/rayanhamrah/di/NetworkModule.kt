@@ -1,7 +1,7 @@
 package com.codinginflow.rayanhamrah.di
 
 import com.codinginflow.rayanhamrah.model.network.StockRecipesApi
-import com.codinginflow.rayanhamrah.util.Constants.Companion.BASE_URL
+import com.codinginflow.rayanhamrah.util.Constants.BASE_URL
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -14,7 +14,7 @@ import javax.inject.Singleton
 
 @Module
 @InstallIn(SingletonComponent::class)
-class NetworkModule {
+object NetworkModule {
 
     @Singleton
     @Provides

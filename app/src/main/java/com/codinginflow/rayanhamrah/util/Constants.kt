@@ -1,11 +1,9 @@
 package com.codinginflow.rayanhamrah.util
 
-class Constants {
+object Constants {
 
-    companion object {
+    const val BASE_URL = "http://10.0.2.2:7001"
 
-        const val BASE_URL = "http://192.168.1.35:5050"
-
-    }
-
+    const val TOKEN = "token"
+    const val SHARED_PREF_FILE = "kotlinsharedpreference"
 }

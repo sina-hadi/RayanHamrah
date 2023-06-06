@@ -10,12 +10,17 @@ class HandleResponse<T> @Inject constructor(
         response.message().toString().contains("timeout") -> {
             NetworkResult.Error("Timeout")
         }
+
         response.isSuccessful -> {
-            val stock = response.body()
-            NetworkResult.Success(stock!!)
+            NetworkResult.Success(data = response.body(), statusCode = response.code())
         }
+
         else -> {
-            NetworkResult.Error(response.message())
+            NetworkResult.Error(
+                message = response.message(),
+                data = response.body(),
+                statusCode = response.code()
+            )
         }
     }
 }
